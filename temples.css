@@ -1,0 +1,139 @@
+/* temples.css - Mobile First Design */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: block;
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: block;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive Menu */
+@media (max-width: 600px) {
+    nav ul {
+        display: block;
+        background-color: #0044cc;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 200px;
+        text-align: right;
+        z-index: 1; /* Ensure it is on top */
+    }
+
+    nav ul li {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Larger Screens (Tablet and up) */
+@media (min-width: 601px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+        gap: 16px;
+    }
+
+    .temple-gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    figcaption {
+        margin-top: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}

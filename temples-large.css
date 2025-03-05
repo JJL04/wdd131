@@ -1,0 +1,35 @@
+/* temples-large.css - For Larger Screens */
+
+@media (min-width: 601px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+        gap: 16px; /* Space between items */
+    }
+
+    .temple-gallery img {
+        width: 100%; /* Make images 100% width of their container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Make sure images cover their containers */
+    }
+
+    figure {
+        margin: 0;
+        text-align: center;
+    }
+
+    figcaption {
+        margin-top: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
