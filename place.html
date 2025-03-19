@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Page</title>
+  <link rel="stylesheet" href="styl3.css">
+  <script src="script.js" defer></script>  <!-- Make sure this matches the actual file name -->
+</head>
+<body>
+  <header>
+    <h1>Discover [Your Country]</h1>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <img src="imageheroimagelarge.jpg" alt="Beautiful view of [Your Country]" />
+    </picture>
+  </section>
+
+  <section class="weather">
+    <h2>Weather</h2>
+    <div class="weather-details">
+      <p>Temperature: <span id="temperature">5</span>°C</p>
+      <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+      <p>Wind Chill: <span id="wind-chill">Loading...</span></p>
+      <p class="emoticon">⛅</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
