@@ -1,13 +1,12 @@
 // Footer: Display Current Year and Last Modified Date
-document.addEventListener("DOMContentLoaded", function () {
-    const yearSpan = document.querySelector("#currentYear");
-    const lastModifiedSpan = document.querySelector("#lastModified");
+ const yearSpan = document.querySelector("#currentYear");
+ const lastModifiedSpan = document.querySelector("#lastModified");
 
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
+ const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
 
-    lastModifiedSpan.textContent = document.lastModified;
-});
+lastModifiedSpan.textContent = document.lastModified;
+
 
 // Wind Chill Calculation
 function calculateWindChill(temp, windSpeed) {
@@ -21,14 +20,13 @@ function calculateWindChill(temp, windSpeed) {
 }
 
 // Display Wind Chill on Page Load
-document.addEventListener("DOMContentLoaded", function () {
-    const temperature = 45; // Example temp in °F (adjust as needed)
-    const windSpeed = 10; // Example wind speed in mph (adjust as needed)
-    const windChillSpan = document.querySelector("#windChill");
+const temperature = 45; // Example temp in °F (adjust as needed)
+const windSpeed = 10; // Example wind speed in mph (adjust as needed)
+const windChillSpan = document.querySelector("#wind-chill");
 
-    if (temperature <= 50 && windSpeed > 3) {
-        windChillSpan.textContent = calculateWindChill(temperature, windSpeed) + "°F";
-    } else {
-        windChillSpan.textContent = "N/A";
-    }
-});
+if (temperature <= 50 && windSpeed > 3) {
+    windChillSpan.value = `${calculateWindChill(temperature, windSpeed)} + °F`;
+ windChillSpan.innerHTML = windChillSpan.value
+ } else {
+ windChillSpan.innerHTML = "N/A";
+ }
