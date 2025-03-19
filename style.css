@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #ff5722; /* Change to match your country theme */
-  --secondary-color: #607d8b;
-  --background-color: #f5f5f5;
-  --font-family: Arial, sans-serif;
+  --primary-color: #ff5722; /* Primary color for the theme */
+  --secondary-color: #607d8b; /* Secondary color */
+  --background-color: #f5f5f5; /* Background color */
+  --font-family: 'Arial', sans-serif; /* Font family */
 }
 
 body {
@@ -22,8 +22,8 @@ header {
 .hero img {
   width: 100%;
   height: auto;
-  /* Consider changing red border */
-  border: 5px solid var(--primary-color);
+  max-width: 100%; /* Ensures image is responsive and doesn't stretch */
+  border: 5px solid var(--primary-color); /* Optional: Adjust border to a lighter shade if needed */
 }
 
 .weather {
