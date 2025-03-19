@@ -22,7 +22,8 @@ header {
 .hero img {
   width: 100%;
   height: auto;
-  border: 5px solid red;
+  /* Consider changing red border */
+  border: 5px solid var(--primary-color);
 }
 
 .weather {
@@ -44,16 +45,4 @@ footer {
   padding: 1rem;
   text-align: center;
   width: 100%;
-}
-
-@media (max-width: 600px) {
-  .hero img {
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 600px) {
-  .hero img {
-    max-width: 100%;
-  }
 }
