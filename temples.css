@@ -4,10 +4,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text for readability */
 }
 
 header {
-    background-color: #0044cc;
+    background-color: #0044cc; /* Blue for the header */
     color: white;
     text-align: center;
     padding: 10px;
@@ -73,7 +75,7 @@ img {
 
 /* Footer */
 footer {
-    background-color: #0044cc;
+    background-color: #0044cc; /* Blue for the footer */
     color: white;
     text-align: center;
     padding: 10px;
@@ -85,7 +87,7 @@ footer {
 @media (max-width: 600px) {
     nav ul {
         display: block;
-        background-color: #0044cc;
+        background-color: #0044cc; /* Blue background for mobile menu */
         position: absolute;
         top: 50px;
         right: 0;
@@ -136,7 +138,7 @@ footer {
         margin-top: 8px;
         font-size: 1rem;
         font-weight: bold;
-        color: #333; /* Ensure the caption is easy to read */
+        color: #333; /* Dark text for captions */
     }
 
     /* Navigation links hover effect */
@@ -147,6 +149,6 @@ footer {
     }
 
     nav a:hover {
-        color: #0077cc; /* Change color on hover */
+        color: #0077cc; /* Lighter blue on hover */
     }
 }
