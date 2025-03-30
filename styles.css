@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F4A460;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2E8B57;
+}
